@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style type="@media print {
+  * { background: transparent !important; color: 
+    black !important; text-shadow: none !important; 
+    filter:none !important; -ms-filter: none 
+    !important; }
+  a, a:visited { color: #444 !important; text-
+    decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3{ page-break-after: avoid; }
+}
+"></style>
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <meta charset="utf-8">
@@ -18,21 +33,6 @@
       ga('create', 'UA-XXXX-Y');
       ga('send', 'pageview');
     </script>
-    <style type="@media print {
-  * { background: transparent !important; color: 
-    black !important; text-shadow: none !important; 
-    filter:none !important; -ms-filter: none 
-    !important; }
-  a, a:visited { color: #444 !important; text-
-    decoration: underline; }
-  a[href]:after { content: " (" attr(href) ")"; }
-  tr, img { page-break-inside: avoid; }
-  img { max-width: 100% !important; }
-  @page { margin: 0.5cm; }
-  p, h2, h3 { orphans: 3; widows: 3; }
-  h2, h3{ page-break-after: avoid; }
-}
-"></style>
   <script src="http://www.google-analytics.com/analytics.js"></script>
   <style type="// Measuring the Critical Rendering Path with Navigation Timing
 // https://developers.google.com/web/fundamentals/performance/critical-rendering-path/measure-crp
