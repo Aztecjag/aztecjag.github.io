@@ -1,0 +1,7 @@
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType css/style.css "access 1 year"
+ExpiresByType img/profilepic.jpg "access 1 year"
+ExpiresByType views/images/pizzeria.jpg "access 1 year"
+ExpiresByType google-analytics.com/analytics.js "access 1 year"
