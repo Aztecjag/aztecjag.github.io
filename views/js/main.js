@@ -365,7 +365,7 @@ var pizzaElementGenerator = function(i) {
   pizzaContainer.id = "pizza" + i;
   pizzaImageContainer.classList.add("col-md-6");
 
-  pizzaImage.src = "images/pizza.png";    // Optimized the image
+  pizzaImage.src = "images/pizza.png";    // The image was optimized.
   pizzaImage.classList.add("img-responsive");
   pizzaImageContainer.appendChild(pizzaImage);
   pizzaContainer.appendChild(pizzaImageContainer);
@@ -430,7 +430,7 @@ var resizePizzas = function(size) {
     return dx;
   }
 
-  // Took some variables out from the loop
+  // Some variable were removed from the loop.
   function changePizzaSizes(size) {
     var randPizzaContainers = document.getElementsByClassName("randomPizzaContainer");
     var dx = determineDx(randPizzaContainers[3], size);
@@ -450,7 +450,7 @@ var resizePizzas = function(size) {
 
 window.performance.mark("mark_start_generating");
 
-// Optimized with rAF
+// Used rAF to optimize
 var pizzasDiv = document.getElementById("randomPizzas");
 window.requestAnimationFrame(function() {
   for (var i = 2; i < 100; i++) {
@@ -479,14 +479,14 @@ var items = document.getElementsByClassName('mover'),
     lastScrollY = 0,
     ticking = false;
 
-// Callback for our scroll event - just
-// keeps track of the last scroll value
+// Callback for the scroll event 
+// Keeps track of the last scroll value
 function onScroll() {
     lastScrollY = window.scrollY;
     requestTick();
 }
 
-// Calls rAF if it's not already been done already
+// Calls rAF if it hasn't been done already
 function requestTick() {
     if(!ticking) {
         window.requestAnimationFrame(updatePositions);
@@ -498,7 +498,7 @@ function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
 
-  // Optimized with transform3d and took some objects out from the loop
+  // Used transform3d to optimize and took some objects out from the loop
   var phase = Math.sin(document.body.scrollTop / 1250);
   for (var i = 0; i < items.length; i++) {
     items[i].style.transform = 'translate3d(' + ((i % 8) * 256 + 100 * (phase + (i % 5))) + 'px, 0px, 0px)';
