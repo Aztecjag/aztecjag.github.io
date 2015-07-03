@@ -21,6 +21,21 @@ Minified style.css
 
 Inlined style.css in index.html
 
+streamlined JS code in main.js
+
+updated for loops in main.js
+
+modified pizzas in main.js to match original UI
+
+added 3 images with defined dimensions in img
+
+added css/.htaccess file
+
+eliminated render blocking CSS and JavaScript in index.html
+
+added media query to remove render blocking CSS in index.html
+
+used User Timing API in main.js
 
 
 
